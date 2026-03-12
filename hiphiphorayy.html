@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Infinite Spin</title>
+    <style>
+        body {
+            background-color: #222;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+        }
+
+        .cat {
+            font-size: 100px;
+            cursor: pointer;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        h1 { text-shadow: 2px 2px #ff00ff; }
+    </style>
+</head>
+<body>
+
+    <h1>CAT-ASTROPHIC ROTATION</h1>
+    
+    <!-- The Cat -->
+    <div class="cat" id="cat" onclick="speedUp()">🐱</div>
+    
+    <p>Click the feline to increase velocity.</p>
+
+    <script>
+        let speed = 2;
+        function speedUp() {
+            speed *= 0.7; // Decrease animation duration
+            document.getElementById('cat').style.animationDuration = speed + 's';
+            if(speed < 0.1) {
+                document.querySelector('h1').innerText = "LIMIT REACHED: MEOW-I-DRIVE";
+            }
+        }
+    </script>
+
+</body>
+</html>
