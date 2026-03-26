@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+          body{
+            background-image: url(space\ bg.jpg);
+          }
+          p{
+            color: antiquewhite;
+          }
+ 
+    </style>
+</head>
+
+<body>
+<p>
+    This is quotes of the century
+</p>
+
+</body>
+
+</html>
