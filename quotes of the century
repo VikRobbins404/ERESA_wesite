@@ -6,17 +6,28 @@
           body{
             background-image: url(space\ bg.jpg);
           }
-          p{
-            color: antiquewhite;
+          h1{
+            color: rgb(255, 255, 255);
+          }
+          ol{
+            color: aqua;
           }
  
     </style>
+     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 </head>
 
 <body>
-<p>
-    This is quotes of the century
-</p>
+<h1>
+    This is quotes of the century, where my friends horrible quotes are.
+</h1>
+
+<ol>
+  <li>this is a list! woah</li>
+  <li>this is a list owo</li>
+  <li>this is a list itemmmmmmm</li>
+</ol>
 
 </body>
 
