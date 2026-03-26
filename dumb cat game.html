@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>The Infinite Spin</title>
     <style>
@@ -23,20 +24,28 @@
         }
 
         @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
-        h1 { text-shadow: 2px 2px #ff00ff; }
+        h1 {
+            text-shadow: 2px 2px #ff00ff;
+        }
     </style>
 </head>
+
 <body>
 
     <h1>CAT-ASTROPHIC ROTATION</h1>
-    
+
     <!-- The Cat -->
     <div class="cat" id="cat" onclick="speedUp()">🐱</div>
-    
+
     <p>Click the feline to increase velocity.</p>
 
     <script>
@@ -44,11 +53,12 @@
         function speedUp() {
             speed *= 0.7; // Decrease animation duration
             document.getElementById('cat').style.animationDuration = speed + 's';
-            if(speed < 0.1) {
+            if (speed < 0.1) {
                 document.querySelector('h1').innerText = "LIMIT REACHED: MEOW-I-DRIVE";
             }
         }
     </script>
 
 </body>
+
 </html>
